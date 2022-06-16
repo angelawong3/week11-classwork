@@ -7,7 +7,8 @@ const app = express();
 // TODO: Create a GET method for `/api/reviews` that logs when a user's request has been received
 app.get("/api/reviews", (req, res) => {
   // Your code here
-  res.json(`${req.method} request received`);
+  console.log("GET request received");
+  res.send("GET request received");
 });
 
 // TODO: Create a POST request for `/api/reviews` that logs when a user's request has been received
